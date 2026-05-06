@@ -7,6 +7,8 @@ VAR
 	msgCtrMask: INT;
 	strArg: STRING;
 	bInputSensorB01: BOOL;
+	bInputSensorB02: BOOL;
+	bInputSensorB03: BOOL;
 	fb_MeinFunktionsbaustein : FB_MeinFunktionsbaustein;
 	
 END_VAR
