@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4026.18">
+  <POU Name="FB_MeinFunktionsbaustein" Id="{c8d2585c-13a7-4eee-8106-430e4a054763}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_MeinFunktionsbaustein
+VAR_INPUT
+	iMeinSensor1 AT %I* : BOOL;
+	iMeinSensor2 AT %I* : BOOL;
+ 
+END_VAR
+
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[iMeinSensor1 := TRUE;
+iMeinSensor2 := TRUE;]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

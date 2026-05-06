@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4026.18">
+  <GVL Name="SPS" Id="{7064f9c4-2ae7-4a19-a94d-ee0ff867340a}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL
+	B103 AT %I* : BOOL; // Füllstand 1
+	B104 AT %I* : BOOL; // Füllstand 2
+	B105 AT %I* : BOOL; // Füllstand 2
+	B106 AT %I* : BOOL; // Füllstand 2
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

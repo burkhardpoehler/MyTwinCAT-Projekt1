@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4026.18">
+  <POU Name="MAIN" Id="{7ce88b42-d77a-4ea8-8309-d4fbcfb93cd8}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	bRunOnlyOnce : bool := FALSE;
+	msgCtrMask: INT;
+	strArg: STRING;
+	bInputSensorB01: BOOL;
+	fb_MeinFunktionsbaustein : FB_MeinFunktionsbaustein;
+	
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[fb_MeinFunktionsbaustein();
+
+IF NOT bRunOnlyOnce THEN 
+	ADSLOGSTR(msgCtrlMask := ADSLOG_MSGTYPE_ERROR OR ADSLOG_MSGTYPE_LOG,
+		msgFmtStr := 'Hello World my new',
+		strArg := '');
+		bRunOnlyOnce := FALSE;
+		bInputSensorB01 := TRUE;
+		
+END_IF]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
